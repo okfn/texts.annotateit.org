@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="{{ url_for('main.create_text') }}" method="post">
+  <h2>1. Paste some text <span title="Not Yet Implemented" class="greyed">/ Upload a text file</span></h2>
+  <textarea class="text" name="text"></textarea>
+
+  <h2>2. Submit and get annotating</h2>
+  <input type="submit" value="Go!" class="btn btn-primary btn-large">
+</form>
+
+{% endblock %}

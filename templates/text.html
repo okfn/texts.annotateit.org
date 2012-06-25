@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="//assets.annotateit.org/annotator/v1.2.5/annotator.min.css">
+{% endblock %}
+
+{% block content %}
+
+<h2>#{{ id }}</h2>
+<div id="text_{{ id }}">
+  <pre class="text">{{ text }}</pre>
+</div>
+
+{% endblock %}
+
+{% block script %}
+  <script src="//assets.annotateit.org/annotator/v1.2.5/annotator-full.min.js"></script>
+  <script>
+    $('#text_{{ id }}').annotator()
+                       .annotator('setupPlugins');
+  </script>
+{% endblock %}

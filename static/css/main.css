@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%;
+  line-height: 1.5em;
+}
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+h1, h2, h3 {
+  font-family: Arvo, serif;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+#airlock {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.text {
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+textarea.text {
+  width: 98%;
+  height: 200px;
+  padding: 10px 1%;
+}
+
+.greyed {
+  opacity: 0.2;
+}
+
+.annotator-controls, .annotator-controls a {
+  line-height: 1em !important;
+}
